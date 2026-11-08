@@ -1,0 +1,32 @@
+# MATLAB autosaves and temporary files
+*.asv
+*.m~
+*.autosave
+
+# Operating system files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Local editor settings (may contain machine-specific paths)
+.vscode/settings.json
+
+# Machine-specific path file, no longer used (vox.m finds its own folder)
+VOX/matlab/voxpath
+VOX/matlab/voxpath.mat
+
+# Results that VOX writes next to vox.m
+VOX/matlab/out*.mat
+VOX/matlab/out*.wav
+VOX/matlab/out_vf_n00000
+VOX/matlab/last_filename.mat
+VOX/matlab/recorded.mat
+VOX/matlab/background.mat
+VOX/matlab/*.avi
+VOX/matlab/foldmov_*.fig
+VOX/matlab/combimov_*.fig
+
+# Example results in out/
+# Note: files already tracked stay tracked until removed once with
+#   git rm -r --cached VOX/matlab/out VOX/matlab/voxpath VOX/matlab/voxpath.mat
+VOX/matlab/out/
