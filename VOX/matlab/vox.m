@@ -116,8 +116,7 @@ switch action
         SD_PLOTCMD = char(['plot_tuf'],['plot_spec'],['plot_puf']);
 
         % check working directory
-        load('voxpath');
-        WORKDIR = voxpath;
+        WORKDIR = fileparts(mfilename('fullpath')); % folder of vox.m (replaces voxpath.mat, works on every computer)
         cd(WORKDIR);
         outdirmissed = length(dir('out'));
         if (outdirmissed ==  0)
