@@ -831,9 +831,9 @@ switch action
         %  data = get(Hndl.figureNumber, 'UserData');
         %  set(Hndl.VOWEL, 'Value', 12);
         if get(Hndl.TractCalcMode,'value') ==  1   % Stair segments
-            initfile = ['out_st' datetime '.mat'];
+            initfile = ['out_st' char(datetime('now','Format','yyyyMMdd_HHmmss')) '.mat'];
         else
-            initfile = ['out_tt' datetime '.mat'];
+            initfile = ['out_tt' char(datetime('now','Format','yyyyMMdd_HHmmss')) '.mat'];
         end;
         [filename, pathname] = uiputfile(initfile, 'choose output tract file');
         if filename ~=  0
